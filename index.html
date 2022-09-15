@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		ITK Survey Form
+	</title>
+
+	<style>
+
+		body {
+			background-color: #07233a;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+        
+        h1 {
+            color: #fff;
+        }
+
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+            font-weight: bold;
+		}
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>ITK Career Path Survey Form</h1>
+
+	<form id="form">
+
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+			<input type="number"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which career path did you choose?
+			</label>
+	
+			<select name="role" id="role">
+				<option value="flutter">Flutter</option>
+				<option value="salesforce">Salesforce</option>
+				<option value="javascript">JavaScript</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Are you satisfied with the career path you chose?
+			</label>
+
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Not sure</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Would you like to take another survey later?
+				<small>(If yes, select which type of survey, otherwise do not select anything.)</small>
+			</label>
+            
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">A survey to join a university program.</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">A survey to evaluate the new Apple Silicon.</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">A survey for a newspaper that wants to find out if 
+                    an article was helpful to the reader.</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
